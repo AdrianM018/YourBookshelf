@@ -2,8 +2,8 @@
 :root {
   --light-shades: #edf3f5;
   --light-accent: #bc9957;
-  --main-brand-color: #df477c;
-  --dark-accent: #92aabf;
+  --main-brand-color: #92aabf;
+  --dark-accent: #df477c;
   --dark-shades: #f5974b;
 
   --light-gray: #a2a2a2;
@@ -11,7 +11,40 @@
   --black: #151515;
 }
 
-/* Text color */
+/* #region - Fonts */
+.h1-font {
+  font-family: "Podkova", serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.h2-regular {
+  font-family: "Life Savers", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.h2-bold {
+  font-family: "Life Savers", serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.h2-extrabold {
+  font-family: "Life Savers", serif;
+  font-weight: 800;
+  font-style: normal;
+}
+
+.regular-text {
+  font-family: "Suranna", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+/* #endregion */
+
+/* #region - Text color */
 .light-shades {
   color: var(--light-shades);
 }
@@ -229,7 +262,7 @@
 
 /* #region - Buttons animation*/
 
-/* #region - Button 1 */
+/* #region - Animation 1 */
 
 .btn-one {
   color: #fff;
@@ -282,3 +315,8 @@
 
 /* #endregion */
 
+/* #region  - Animation 2*/
+.btn-two:hover {
+  transform: scale(1.1);
+  }
+/* #endregion */
