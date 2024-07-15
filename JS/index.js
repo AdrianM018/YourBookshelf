@@ -21,8 +21,8 @@ async function searchingbooks(){
         const booksearch_input = document.getElementById("booksearch_input").value.toLocaleLowerCase();
         const searchURL = await fetch(`https://openlibrary.org/search.json?title=${booksearch_input}`)
         const datasearch = await searchURL.json()
-        console.log(datasearch.docs[0].title)
+        console.log(datasearch)
     }catch(error){
-        console.log(error)
+        console.error(error)
     }
 }
